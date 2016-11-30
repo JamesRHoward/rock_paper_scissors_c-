@@ -23,5 +23,13 @@ namespace RPSGameTest
       Console.WriteLine("Test" + testWin);
       Assert.Equal(p1Wins, testWin);
     }
+    [Fact]
+    public void Rules_PlayerOneRockPlayerTwoScissorsPOneWins_ItsGonnaFail()
+    {
+      string p1Wins = "Player Two Wins";
+      Rules testRules = new Rules();
+      string testWin = testRules.RockPaperScissors("scissors", "rock");
+      Assert.Equal(p1Wins, testWin);
+    }
   }
 }

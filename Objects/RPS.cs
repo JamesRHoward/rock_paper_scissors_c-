@@ -45,7 +45,7 @@ namespace RPSGame.Objects
       }
       else if (playerTwo > playerOne && (playerTwo - playerOne) == 2) //P1: Rock(1) P2: Scissors(3)
       {
-        return "Player Two Wins";
+        return "Player One Wins";
       }
       else if (playerOne > playerTwo && (playerOne - playerTwo) == 2) //P2: Rock(1) P1: Scissors(3)
       {
@@ -55,7 +55,7 @@ namespace RPSGame.Objects
       {
         return "Player One Wins";
       }
-      else if (playerTwo > playerOne && (playerTwo - playerTwo) == 1)
+      else if (playerTwo > playerOne && (playerTwo - playerOne) == 1)
       {
         return "Player Two Wins";
       }
