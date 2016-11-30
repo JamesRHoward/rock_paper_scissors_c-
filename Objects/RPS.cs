@@ -7,7 +7,7 @@ namespace RPSGame.Objects
   {
     public int playerOne;
     public int playerTwo;
-    public static Dictionary<string, int> rps = new Dictionary<string, int> ()
+    public static Dictionary<string, int> rps = new Dictionary<string, int>()
     {
       {"ROCK", 1},
       {"PAPER", 2},
@@ -18,7 +18,6 @@ namespace RPSGame.Objects
     {
       var P1 = P1Input.ToUpper();
       var P2 = P2Input.ToUpper();
-
       if (rps.ContainsKey(P1))
       {
         playerOne = rps[P1];
@@ -44,7 +43,7 @@ namespace RPSGame.Objects
       {
         return "Draw";
       }
-      else if (playerTwo > playerOne && (playerOne - playerTwo) == 2) //P1: Rock(1) P2: Scissors(3)
+      else if (playerTwo > playerOne && (playerTwo - playerOne) == 2) //P1: Rock(1) P2: Scissors(3)
       {
         return "Player Two Wins";
       }
@@ -56,7 +55,7 @@ namespace RPSGame.Objects
       {
         return "Player One Wins";
       }
-      else if (playerTwo > playerOne && (playerOne - playerTwo) == 1)
+      else if (playerTwo > playerOne && (playerTwo - playerTwo) == 1)
       {
         return "Player Two Wins";
       }
