@@ -16,8 +16,8 @@ namespace RPSGame.Objects
 
     public string RockPaperScissors (string P1Input, string P2Input)
     {
-      var P1 = P1Input.ToUpper();
-      var P2 = P2Input.ToUpper();
+      string P1 = P1Input.ToUpper();
+      string P2 = P2Input.ToUpper();
 
       if (rps.ContainsKey(P1))
       {
@@ -37,7 +37,7 @@ namespace RPSGame.Objects
       }
       if (playerOne == 0 || playerTwo == 0)
       {
-        return "Invaid Choice!";
+        return "Invalid Choice!";
       }
       else if (playerOne == playerTwo)
       {

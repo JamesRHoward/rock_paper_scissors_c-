@@ -10,7 +10,17 @@ namespace RPSGameTest
     {
       string p1Wins = "Player One Wins";
       Rules testRules = new Rules();
-      string testWin = testRules.RockPaperScissors("ROCK", "SCISSORS");
+      string testWin = testRules.RockPaperScissors("rock", "scissors");
+      Console.WriteLine("Test" + testWin);
+      Assert.Equal(p1Wins, testWin);
+    }
+    [Fact]
+    public void Rules_PlayerOneEqualsZeroPlayerTwoEqualsZero_True()
+    {
+      string p1Wins = "Invalid Choice!";
+      Rules testRules = new Rules();
+      string testWin = testRules.RockPaperScissors("", "");
+      Console.WriteLine("Test" + testWin);
       Assert.Equal(p1Wins, testWin);
     }
   }
