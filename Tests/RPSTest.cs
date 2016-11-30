@@ -1,6 +1,7 @@
 using Xunit;
 using System;
 using RPSGame.Objects;
+using System.Collections.Generic;
 namespace RPSGameTest
 {
   public class RulesTest
@@ -11,7 +12,6 @@ namespace RPSGameTest
       string p1Wins = "Player One Wins";
       Rules testRules = new Rules();
       string testWin = testRules.RockPaperScissors("rock", "scissors");
-      Console.WriteLine("Test" + testWin);
       Assert.Equal(p1Wins, testWin);
     }
     [Fact]

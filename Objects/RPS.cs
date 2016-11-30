@@ -7,7 +7,7 @@ namespace RPSGame.Objects
   {
     public int playerOne;
     public int playerTwo;
-    public static Dictionary<string, int> rps = new Dictionary<string, int>()
+    public static Dictionary<string, int> rps = new Dictionary<string, int> ()
     {
       {"ROCK", 1},
       {"PAPER", 2},
@@ -16,8 +16,8 @@ namespace RPSGame.Objects
 
     public string RockPaperScissors (string P1Input, string P2Input)
     {
-      string P1 = P1Input.ToUpper();
-      string P2 = P2Input.ToUpper();
+      var P1 = P1Input.ToUpper();
+      var P2 = P2Input.ToUpper();
 
       if (rps.ContainsKey(P1))
       {
@@ -35,6 +35,7 @@ namespace RPSGame.Objects
       {
         playerTwo = 0;
       }
+
       if (playerOne == 0 || playerTwo == 0)
       {
         return "Invalid Choice!";
